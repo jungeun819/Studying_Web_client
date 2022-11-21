@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자주문</title>
+</head>
+<body>
+    <h1>피자주문</h1>
+    <hr><br>
+
+    <form action="get">
+        <label for="customer-name">고객명 : </label>
+        <input type="text" name="customer-name" id="customer-name">
+
+        <br><br>
+        <label for="customer-tel">전화번호(필수) : </label>
+        <input type="text" name="customer-tel" id="customer-tel" required>
+
+        <br><br>
+        <label for="customer-email">E-mail : </label>
+        <input type="email" name="customer-email" id="customer-email">
+
+        <br><br>
+        <label for="pizza-menu">피자선택(필수) : </label>
+        <select name="pizza-menu" id="pizza-menu" required>
+            <option value="">피자를 선택하세요</option>
+            <option value="포테이토 피자">포테이토 피자</option>
+            <option value="고구마 피자">고구마 피자</option>
+            <option value="페페로니 피자">페페로니 피자</option>
+            <option value="불고기 피자">불고기 피자</option>
+        </select>
+
+        <br><br>
+        <fieldset>
+            <legend>피자 사이즈(필수)</legend>
+            <div>
+                <input type="radio" name="size" id="size-S" required>
+                <label for="size-S">Small</label>
+
+                <br><br>
+                <input type="radio" name="size" id="size-M">
+                <label for="size-M">Medium</label>
+
+                <br><br>
+                <input type="radio" name="size" id="size-L">
+                <label for="size-L">Large</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>토핑 선택</legend>
+            
+            <input type="checkbox" name="topping" id="topping-1">
+            <label for="topping-1">베이컨</label>
+
+            <br><br>
+            <input type="checkbox" name="topping" id="topping-2">
+            <label for="topping-2">치즈</label>
+
+            <br><br>
+            <input type="checkbox" name="topping" id="topping-3">
+            <label for="topping-3">양파</label>
+
+            <br><br>
+            <input type="checkbox" name="topping" id="topping-4">
+            <label for="topping-4">버섯</label>
+        </fieldset>
+
+        <br>
+        <label for="delivery-time">희망 배송 시간 : </label>
+        <input type="time" name="delivery-time" id="delivery-time">
+
+        <br><br>
+        <label for="demand">배송시 요청사항 : </label>
+        <textarea name="demand" id="demand" cols="30" rows="5"></textarea>
+
+        <br><br>
+        <button type="submit">주문하기</button>
+    </form>
+</body>
+</html>
