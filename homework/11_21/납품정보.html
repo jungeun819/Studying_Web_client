@@ -42,7 +42,6 @@
                         </optgroup>
                     </select>    
                 </li>
-
             </ol>    
         </fieldset>
 
@@ -53,10 +52,12 @@
                     <label for="product-name">상품명(필수) : </label>
                     <input type="text" name="product-name" id="product-name" required>
                 </li>
+
                 <li>
                     <label for="delivery-quantity">납품수량(필수) : </label>
                     <input type="number" name="delivery-quantity" id="delivery-quantity" placeholder="최소 100" min="100" required>
                 </li>
+
                 <li>
                     <label for="delivery-grade">납품등급(필수)</label>
                     <input type="range" name="delivery-grade" id="delivery-grade" min="1" max="5" value="3" list="grade" required>
@@ -68,12 +69,14 @@
                             <option value="5">5</option>
                         </datalist>
                 </li>
+
                 <li>
                     <label for="etc">기타사항 : </label>
                     <textarea name="etc" id="etc"></textarea>
                 </li>
             </ul>
         </fieldset>
+        
         <br>
         <button type="submit">send message</button>
     </form>
