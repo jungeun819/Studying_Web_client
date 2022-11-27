@@ -64,7 +64,7 @@
 		let checkedVal = document.getElementById("productName").value;
 		const pList = document.querySelectorAll("#goodlist option");
 		let pName = "";
-
+		
 		if(checkedVal){
 			for(let i = 0; i < pList.length; i++){
 				if(checkedVal == pList[i].value){
@@ -78,11 +78,12 @@
 			alert("상품명을 입력해주세요");
 			return;
 		}
-		
+		// 상품명 리스트 존재여부 확인
 		if(pName == "") {
 			alert("상품명을 확인해주세요");
 			return;
 		}
+		console.log(pName);
 		
 		// 수량 확인
 		const amount = document.getElementById("productAmount").value;
@@ -106,9 +107,7 @@
 			납품등급 : ${level}
 			기타사항 : ${etc}`;
 		}
-		
 	}
-
 	</script>
 </body>
 </html>
